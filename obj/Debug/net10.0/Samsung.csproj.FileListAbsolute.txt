@@ -230,3 +230,4 @@ C:\Users\Dell\source\repos\Samsung\Samsung\obj\Debug\net10.0\refint\Samsung.dll
 C:\Users\Dell\source\repos\Samsung\Samsung\obj\Debug\net10.0\Samsung.pdb
 C:\Users\Dell\source\repos\Samsung\Samsung\obj\Debug\net10.0\Samsung.genruntimeconfig.cache
 C:\Users\Dell\source\repos\Samsung\Samsung\obj\Debug\net10.0\ref\Samsung.dll
+C:\Users\Dell\source\repos\Samsung\Samsung\obj\Debug\net10.0\Samsung.sourcelink.json
