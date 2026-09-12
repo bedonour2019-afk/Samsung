@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Samsung</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+
+    <!-- Header & Navbar -->
+    <header class="main-header">
+        <div class="logo-container">
+            <a href="~/ #home" class="samsung-logo-text">SAMSUNG</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="~/ #smartphones" class="active">Smartphones</a></li>
+            <li><a href="~/ #laptops">Laptops</a></li>
+            <li><a href="~/ #wearables">Wearables</a></li>
+            <li><a href="~/ #audio">Audio</a></li>
+            <li><a href="~/ #about">About</a></li>
+        </ul>
+        <div class="header-icons">
+            <a href="#"><i class="fa-solid fa-search"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <!-- Professional Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Col 1: Brand & Slogan -->
+            <div class="footer-col brand-col">
+                <a href="#home" class="samsung-logo-text">SAMSUNG</a>
+                <p>Innovating a smarter future, inspiring the world.</p>
+            </div>
+
+            <!-- Col 2: Products -->
+            <div class="footer-col">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="#smartphones">Smartphones</a></li>
+                    <li><a href="#laptops">Laptops</a></li>
+                    <li><a href="#wearables">Wearables</a></li>
+                    <li><a href="#audio">Audio</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Support -->
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Warranty</a></li>
+                    <li><a href="#">Service Centers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: About -->
+            <div class="footer-col">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">Our Brand</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 5: Social & Newsletter -->
+            <div class="footer-col newsletter-col">
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <h4>Stay Updated</h4>
+                <p>Get the latest news and offers.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Samsung Electronics Co., Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
